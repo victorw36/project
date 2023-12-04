@@ -56,8 +56,9 @@ public class Fight {
             if(!fighter2.isAlive()) {
                 break;
             }
-
             fighter1.incrementMana();
+            fighter2.incrementMana();
+
             System.out.println(fighter1.getName() + " has " + fighter1.getMana() + " mana left, " + fighter1.getName() + " has " + fighter1.getHealth() + " health left");
             System.out.println(fighter2.getName() + " has " + fighter2.getMana() + " mana left, " + fighter2.getName() + " has " + fighter2.getHealth() + " health left");
             System.out.println();
@@ -94,6 +95,7 @@ public class Fight {
                 }
             }
             moveAvailability = false;
+            fighter1.incrementMana();
             fighter2.incrementMana();
 
             System.out.println(fighter1.getName() + " has " + fighter1.getMana() + " mana left, " + fighter1.getName() + " has " + fighter1.getHealth() + " health left");
